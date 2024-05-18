@@ -1,0 +1,50 @@
+<!-- 
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>University Recommendation System</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+  <div class="container">
+    <h2>University Recommendation System</h2>
+    
+
+    <label for="country">Country:</label>
+    <select id="country" name="country" required>
+      <option value="blank">Select an option</option>
+      <option value="GERMANY">GERMANY</option>
+    </select><br><br>
+
+    <form action="/" method="post">
+
+      <label for="domain">Domain (e.g., Finance, Computer Science):</label>
+      <input type="text" id="domain" name="domain"><br><br>
+
+      <label for="studylevel">Study Level:</label>
+      <select id="studylevel" name="studylevel">
+        <option value="blank">Select an option</option>
+        <option value="Postgraduate">Postgraduate</option>
+        <option value="Undergraduate">Undergraduate</option>
+      </select><br><br>
+    
+      <label for="course">Specific Course (Optional):</label>
+      <input type="text" id="course" name="course"><br><br>
+
+      <label for="toefl_score">TOEFL Score (Optional):</label>
+      <input type="number" id="toefl_score" name="toefl_score"><br><br>
+
+      <label for="ielts_score">IELTS Score (Optional):</label>
+      <input type="number" id="ielts_score" name="ielts_score"><br><br>
+      <div class="container">
+        <button type="submit">Get Recommendations</button>
+      </div>
+    </form>
+
+  </div>
+</body>
+</html> -->
