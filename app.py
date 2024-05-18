@@ -34,19 +34,6 @@ def form():
         print(results_from_main)
         return jsonify(results_from_main)
         
-    #     print(results_from_main) 
-        
-
-        # if results_from_main == "No Universities Matched":
-        #     return render_template('output.html', recommendations=[], message="No Universities Matched to Input, suggesting related courses>>>\n ",  show_related_button=True)
-        # elif results_from_main == "Database or query error":
-        #     return render_template('output.html', recommendations=[], message="Reload and try again\n ", show_related_button=True)
-        # else:
-        #     return render_template('output.html', recommendations=results_from_main, message=None, show_related_button=True)
-        
-
-        # Pass results from generate_output directly to the output template
-    #     # return render_template('output.html', recommendations=results_from_main)
     return render_template('index.html')
 
 
@@ -101,22 +88,7 @@ def jobsAndPay():
 
     return jsonify({"error": "Method not allowed"}), 405  
 
-# @app.route('/countries', methods=['GET', 'POST'])
-# def get_all_countries():
-   
-#     countries = get_countries()  # Call the get_countries function
-#     if isinstance(countries, tuple) and countries[0] == 500:
-#       return jsonify({'error': 'Error fetching countries'}), 500  # Return error message
-
-#   # Assuming get_countries returns a list of dictionaries (one for each country)
-#     return jsonify(countries)
-
-
-
-    
-
-
 
 
 if __name__ == '__main__':
-    app.run(debug=True, port=8082) 
+    app.run(debug=True) 
